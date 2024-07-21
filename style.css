@@ -30,6 +30,9 @@ header, footer {
 .container {
     display: flex;
     flex: 1;
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
 }
 .sidebar-left {
     width: 20%;
