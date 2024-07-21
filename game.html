@@ -14,42 +14,51 @@
 
         <div class="question">
             <label>1. What is the capital of Hokkaido?</label>
+        <div>
             <input type="radio" name="q1" value="A"> A. Osaka<br>
             <input type="radio" name="q1" value="B"> B. Sapporo<br>
             <input type="radio" name="q1" value="C"> C. Tokyo<br>
             <input type="radio" name="q1" value="D"> D. Kyoto<br>
         </div>
+        </div>
 
         <div class="question">
             <label>2. Which Country has the largest population?</label>
+        <div>
             <input type="radio" name="q2" value="A"> A. China<br>
             <input type="radio" name="q2" value="B"> B. India<br>
             <input type="radio" name="q2" value="C"> C. Japan<br>
             <input type="radio" name="q2" value="D"> D. America<br>
         </div>
-
+        </div>
         <div class="question">
             <label>3. What is the largest planet in our solar system?</label>
+        <div>
             <input type="radio" name="q3" value="A"> A. Earth<br>
             <input type="radio" name="q3" value="B"> B. Mars<br>
             <input type="radio" name="q3" value="C"> C. Jupiter<br>
             <input type="radio" name="q3" value="D"> D. Saturn<br>
         </div>
-
+        </div>
         <div class="question">
             <label>4. What is the largest denomination of Japanese Yen coin??</label>
+        <div>
             <input type="radio" name="q4" value="A"> A. 50<br>
             <input type="radio" name="q4" value="B"> B. 100<br>
             <input type="radio" name="q4" value="C"> C. 500<br>
             <input type="radio" name="q4" value="D"> D. 1000<br>
         </div>
+        </div>
 
         <div class="question">
             <label>5. What is the boiling point of water?</label>
+        <div>
             <input type="radio" name="q5" value="A"> A. 50°C<br>
             <input type="radio" name="q5" value="B"> B. 100°C<br>
             <input type="radio" name="q5" value="C"> C. 150°C<br>
             <input type="radio" name="q5" value="D"> D. 200°C<br>
+        </div>
+
         </div>
 
         <button type="button" id="submit-button">Submit</button>
@@ -67,9 +76,16 @@
                 if (selectedOption === correctAnswers[i]) {
                     score += 20;
                 }
+            };
+            if(userName=='')
+            {
+                alert("please input name first!")
             }
-
-            alert(userName + ", your final score is: " + score);
+            else
+            {
+                alert(userName + ", your final score is: " + score);
+            }
+            
         });
     </script>
 </body>
