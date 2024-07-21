@@ -1,24 +1,25 @@
-.body {
+/* 通用样式 */
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
     background-color: #f4f4f4;
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
 }
+
 header, footer {
     background-color: #06d106;
     padding: 10px;
     text-align: center;
-    
 }
+
 .menu-bar {
     background-color: #abd59e;
     overflow: hidden;
-    text-align: center;
-    justify-content: center
 }
+
 .menu-bar a {
     float: left;
     display: block;
@@ -27,109 +28,115 @@ header, footer {
     padding: 14px 16px;
     text-decoration: none;
 }
+
 .menu-bar a:hover {
     background-color: #ddd;
     color: black;
 }
+
 .container {
     display: flex;
     flex: 1;
-    width: 80%;
-    margin: auto;
-    overflow: hidden;
 }
+
 .sidebar-left {
     width: 20%;
     padding: 10px;
     background-color: #fed0d0;
-    margin-right: 5px; 
+    margin-right: 5px;
 }
+
 .sidebar-right {
     width: 20%;
     padding: 10px;
     background-color: #fed0d0;
-    margin-left: 5px; 
+    margin-left: 5px;
 }
+
 .content {
     width: 60%;
     padding: 10px;
-    background-color: #fed0d0
+    background-color: #fed0d0;
 }
+
 .contact-form input, .contact-form textarea {
     width: 100%;
     padding: 5px;
     margin: 5px 0;
 }
+
 .contact-form button {
     padding: 10px;
     margin: 5px 5px 5px 0;
 }
+
 .content img {
-    max-width: 100%;
+    max-width: 75%;
     height: auto;
     margin: 10px 0;
     border: 1px solid #ddd;
     border-radius: 4px;
 }
+
+/* Portfolio */
+.portfolio-container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
 table {
     width: 100%;
     border-collapse: collapse;
     margin: 20px 0;
     background: #fff;
 }
+
 th, td {
     padding: 12px;
     text-align: left;
     border-bottom: 1px solid #ddd;
 }
+
 th {
     background-color: #4CAF50;
     color: white;
 }
+
 img {
     max-width: 200px;
     height: auto;
 }
+
 .gallery {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
     margin: 20px;
 }
+
 .gallery-item {
     text-align: center;
     margin: 10px;
 }
+
 .gallery-item img {
     max-width: 100%;
     height: auto;
 }
+
 .caption {
     font-size: 16px;
     color: #555;
 }
+
 .container-img {
     display: flex;
-    justify-content: space-around; 
+    justify-content: space-around;
     flex-wrap: wrap; 
-    margin: 20px 0;
 }
+
 .container-img .image {
     max-width: 200px;
     margin: 10px;
-}
-.portfolio-container {
-    width: 80%;
-    margin: auto;
-    overflow: hidden;
-}
-.question {
-    margin-bottom: 20px;
-}
-.question label {
-    display: block;
-    margin-bottom: 5px;
-}
-.question input[type="radio"] {
-    margin-right: 10px;
 }
