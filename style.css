@@ -40,14 +40,14 @@ header, footer {
 }
 
 .sidebar-left {
-    width: 20%;
+    width: 50%;
     padding: 10px;
     background-color: #fed0d0;
     margin-right: 5px;
 }
 
 .sidebar-right {
-    width: 20%;
+    width: 50%;
     padding: 10px;
     background-color: #fed0d0;
     margin-left: 5px;
