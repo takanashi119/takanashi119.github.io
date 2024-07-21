@@ -1,4 +1,4 @@
-/* 通用样式 */
+
 body {
     display: flex;
     flex-direction: column;
@@ -40,14 +40,14 @@ header, footer {
 }
 
 .sidebar-left {
-    width: 50%;
+    width: 20%;
     padding: 10px;
-    background-color: #371c1c;
+    background-color: #fed0d0;
     margin-right: 5px;
 }
 
 .sidebar-right {
-    width: 50%;
+    width: 20%;
     padding: 10px;
     background-color: #fed0d0;
     margin-left: 5px;
