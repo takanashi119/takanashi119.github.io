@@ -106,11 +106,16 @@ img {
 }
 .container-img {
     display: flex;
-    justify-content: space-around; /* 图片之间均匀分布 */
-    flex-wrap: wrap; /* 允许换行 */
+    justify-content: space-around; 
+    flex-wrap: wrap; 
     margin: 20px 0;
 }
 .container-img .image {
     max-width: 200px;
     margin: 10px;
+}
+.portfolio-container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
 }
