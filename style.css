@@ -120,3 +120,13 @@ img {
     margin: auto;
     overflow: hidden;
 }
+.question {
+    margin-bottom: 20px;
+}
+.question label {
+    display: block;
+    margin-bottom: 5px;
+}
+.question input[type="radio"] {
+    margin-right: 10px;
+}
