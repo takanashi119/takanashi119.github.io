@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Game</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .question {
+            margin-bottom: 20px;
+        }
+        .question label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        .question input[type="radio"] {
+            margin-right: 10px;
+        }
+        #submit-button {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Quiz Game</h1>
+    <form id="quiz-form">
+        <label for="name">Enter your name:</label>
+        <input type="text" id="name" required><br><br>
+
+        <div class="question">
+            <label>1. What is the capital of France?</label>
+            <input type="radio" name="q1" value="A"> A. Berlin<br>
+            <input type="radio" name="q1" value="B"> B. Madrid<br>
+            <input type="radio" name="q1" value="C"> C. Paris<br>
+            <input type="radio" name="q1" value="D"> D. Rome<br>
+        </div>
+
+        <div class="question">
+            <label>2. What is 2 + 2?</label>
+            <input type="radio" name="q2" value="A"> A. 3<br>
+            <input type="radio" name="q2" value="B"> B. 4<br>
+            <input type="radio" name="q2" value="C"> C. 5<br>
+            <input type="radio" name="q2" value="D"> D. 6<br>
+        </div>
+
+        <div class="question">
+            <label>3. What is the largest planet in our solar system?</label>
+            <input type="radio" name="q3" value="A"> A. Earth<br>
+            <input type="radio" name="q3" value="B"> B. Mars<br>
+            <input type="radio" name="q3" value="C"> C. Jupiter<br>
+            <input type="radio" name="q3" value="D"> D. Saturn<br>
+        </div>
+
+        <div class="question">
+            <label>4. Who wrote "To Kill a Mockingbird"?</label>
+            <input type="radio" name="q4" value="A"> A. J.K. Rowling<br>
+            <input type="radio" name="q4" value="B"> B. Harper Lee<br>
+            <input type="radio" name="q4" value="C"> C. Ernest Hemingway<br>
+            <input type="radio" name="q4" value="D"> D. Mark Twain<br>
+        </div>
+
+        <div class="question">
+            <label>5. What is the boiling point of water?</label>
+            <input type="radio" name="q5" value="A"> A. 50°C<br>
+            <input type="radio" name="q5" value="B"> B. 100°C<br>
+            <input type="radio" name="q5" value="C"> C. 150°C<br>
+            <input type="radio" name="q5" value="D"> D. 200°C<br>
+        </div>
+
+        <button type="button" id="submit-button">Submit</button>
+    </form>
+
+    <script>
+        document.getElementById('submit-button').addEventListener('click', function() {
+            var score = 0;
+            var correctAnswers = ['C', 'B', 'C', 'B', 'B'];
+            var userName = document.getElementById('name').value;
+            var formElements = document.getElementById('quiz-form').elements;
+
+            for (var i = 0; i < correctAnswers.length; i++) {
+                var selectedOption = formElements['q' + (i + 1)].value;
+                if (selectedOption === correctAnswers[i]) {
+                    score += 20;
+                }
+            }
+
+            alert(userName + ", your final score is: " + score);
+        });
+    </script>
+</body>
+</html>
